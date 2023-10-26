@@ -1,7 +1,6 @@
-![image](https://github.com/Rahulchouhan100/DSA-with-JS/assets/144984718/b0d0eedd-c3a4-4aab-9881-b65e0051b350)# Basic DSA challange in Javascript.
+ #Basic DSA challange in Javascript.
 
 # Array Challenge.
-
 1.  Find a duplicate number in an array of integers.
 2.  Find the largest and smallest number in an unsorted array of integers.
 3.  Find the smallest number in Array.
