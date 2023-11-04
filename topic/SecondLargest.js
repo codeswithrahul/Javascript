@@ -8,13 +8,14 @@
 
 // brute force approac
 
+/*
 
 const arr = [10,20,30,3,30,7];
 
 
 function secondLargest(arr) {
-    const uniqArr = Array.from(new Set(arr));
-     uniqArr.sort((a,b) => b - a)
+    const uniqArr = Array.from(new Set(arr)); //O(n)
+     uniqArr.sort((a,b) => b - a) // )(nlogn)
     if(uniqArr.length >= 2){
         return uniqArr[1]
     }else{
@@ -23,5 +24,15 @@ function secondLargest(arr) {
 
 }
 
-console.log(secondLargest([10,20,30,3,30,7]))
+console.log(secondLargest([10,20,30,3,30,7])) // O(nlogn)
+
+*/
+
+// Optimised Approach 
+
+function secondLargest(){
+
+}
+
+console.log(secondLargest());
 
