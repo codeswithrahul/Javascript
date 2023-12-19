@@ -10,6 +10,8 @@
 7.  Find the maximum number in an array of numbers.
 8.  Create a function that will merge two arrays and return the result as a new array.
 9.  Palindrome
+10. Valid anagram
+11.  
 
 
 
