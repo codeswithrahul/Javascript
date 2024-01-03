@@ -4,8 +4,8 @@ output = { name: 'surya', age: '42', gender: 'male' }
 
 function output(input){
   let obj ={}
-  const lawra = input.split('1234').join('').split('4321').join('').split("&")
-  for(let val of lawra){
+  const test = input.split('1234').join('').split('4321').join('').split("&")
+  for(let val of test){
     const ele = val.split("-")
     obj[ele[1]] = ele[0]
     
