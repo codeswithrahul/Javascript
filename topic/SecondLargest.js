@@ -6,7 +6,7 @@
 // 3. it might be possible in arr there will be only 1 element so there is 
 // no second largest number 
 
-// brute force approac
+// brute force approach
 
 
 const arr = [10,20,30,3,30,7];
