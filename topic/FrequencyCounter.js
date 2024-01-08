@@ -17,7 +17,7 @@ function fCounter(str) {
       // If the character is not a key in the 'map' object, set its value to 1.
       map[elm] = 1;
     }
-  }map[elm]
+  }
 
   // Returning the final 'map' object containing the frequency of each character.
   return map;
