@@ -20,7 +20,7 @@ function createOrderId() {
 
     const orderID = "123455";
     if (orderID) {
-      resolve();
+      resolve(orderID);
     }
   });
 
