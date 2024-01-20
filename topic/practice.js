@@ -8,7 +8,6 @@ function output(input){
   for(let val of test){
     const ele = val.split("-")
     obj[ele[1]] = ele[0]
-    
   }
   console.log(obj)
 

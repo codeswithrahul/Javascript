@@ -123,7 +123,7 @@ async function handleAPIcall() {
     console.log(err);
   }
 
-  //fetch () => Response.json() => jsonValue   Note : json returns promise
+  // fetch () => Response.json() => jsonValue   Note : json returns promise
   // once the promise is resolved then fetch will give response object has a body which is a readble stream if we want to convert
   // readle stream to json so we will use .json() and json again return a promise.
 }
