@@ -1,7 +1,5 @@
 const cart = ["shoes", "pants", "tshirt"];
-
 const promises = createOrderId(cart);
-
 promises
   .then(function (orderID) {
     console.log(orderID);
@@ -25,7 +23,7 @@ promises
 // any error come up in any promise so that catch will handle automatically.
 // after the catch block , call back will be called no matter what happens in above code or promise.
 
-function createOrderId() {
+function createOrderId() {                                                                 
   const pr = new Promise(function (resolve, reject) {
     // logic for createOrder
 
@@ -38,6 +36,9 @@ function createOrderId() {
     // logic for create order
 
     const orderID = "123455";
+if(!orderID) {
+  new Error ("jelo")
+}
     if (orderID) {
       resolve(orderID);
     }

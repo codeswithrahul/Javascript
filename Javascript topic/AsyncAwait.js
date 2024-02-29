@@ -12,7 +12,6 @@ const p = new Promise((resolve, reject) => {
 });
 
 // Above code is returning a promise
-
 /**
  * Returns a promise that resolves with the result of the asynchronous function.
  * @param {function} fn - The asynchronous function to execute.
