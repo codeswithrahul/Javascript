@@ -4,6 +4,7 @@
 // 3. Promise.race()
 // 4. Promise.any()
 
+
 /**
  * 1. Promises.all() :
  *
@@ -102,3 +103,6 @@ const hello4 = Promise.any([p1, p2, p3])
   .catch((err) => console.error(err));
 
 // console.log(hello);
+
+
+
