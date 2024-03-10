@@ -20,7 +20,6 @@ console.log(sliceValue) //  output: java
 console.log(skills.slice(1)) // output : avascript
 
 // string concatenation
-
 const myFirstName = "rahul";
 const myLastName = "chouhan";
 // console.log(myFirstName + ' ' + myLastName); output : rahul chouhan
