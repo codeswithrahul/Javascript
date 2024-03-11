@@ -1,7 +1,6 @@
 //  Data types in javascript
 
 // There are two types of data types in javascript
-
 // 1. Primitive 
 //      Number
 //      String
@@ -11,7 +10,8 @@
 //      BigIntsymbol
 //      Symbol
 // 2. Non Primitive
-    
+//       Number
+//      
 // we can check data type using type of
 
 

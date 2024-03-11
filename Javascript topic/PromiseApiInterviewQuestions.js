@@ -51,7 +51,8 @@
 // failure case : after 1 sec it will give the result = [error] . it will not wait for another promises to be resolved.
 
 // 4. Promise.any()
-/** - It will wait for first success then it will return that value.(seeking for first success)
+/**
+ * It will wait for first success then it will return that value.(seeking for first success)
  * We will wait for the first resolved.let assume  p1 takes 3sec and p2 - 1sec and p3 - 2second
  * if p2 becomes success then it will give value of p2. if p2 becomes fails and p3 become success then it will give value of p3.
  *
