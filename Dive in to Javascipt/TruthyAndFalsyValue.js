@@ -10,3 +10,5 @@ if(age >=18){
 } else{
     console.log("user can vote");
 }
+
+// 1:50

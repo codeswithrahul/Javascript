@@ -26,4 +26,3 @@ const myLastName = "chouhan";
 
 // template string
 console.log(`my firstName is ${myFirstName} and lastName is ${myLastName}`);
-
