@@ -10,6 +10,7 @@ function fCounter(str) {
     // Checking if the current character (elm) is already a key in the 'map' object.
     if (map[elm]) {
       // If the character is already a key, increment its value by 1.
+      // 's' = 1 + 1
       map[elm] = map[elm] + 1;
       // Logging the updated frequency of the character to the console.
       console.log(map[elm] + 1);
