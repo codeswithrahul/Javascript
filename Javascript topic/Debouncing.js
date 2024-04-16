@@ -1,5 +1,5 @@
 // debounce is technique to reduce api call.
-// if we are using react then we can wrap the debounce() function inside useMemo.
+// if we are using react then we can wrap the debounce() function inside the useMemo Hook.
 
 
 const input = document.querySelector("input");
