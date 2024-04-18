@@ -45,7 +45,7 @@ function bca(a) {
   a += 1;
   return a;
 }
-console.log(bca(0));
+// console.log(bca(0));
 // console.log(func); ----------> 5
 
 const person1 = {
@@ -100,7 +100,81 @@ function multiplyByObj(obj) {
 
 multiplyByObj(nums);
 
-
-
+// const data = "hello";
+// console.log([...data]);
 
 // Question 3
+
+// destructuring in object
+
+let userName = {
+  names: "rahulchouhan",
+  fullName: {
+    firstName: "Rahul",
+    lastName: "chouhan",
+  },
+};
+
+const { names } = userName;
+console.log(userName);
+
+const data = "hello";
+// console.log([...data]); ---> ['h','e','l','l','o']
+
+const setting = {
+  userName: "rahul123",
+  skill: 5,
+  level: 10,
+};
+const storeData = JSON.stringify(setting, ["skill", "level"]);
+// console.log(storeData);  --> {"skills" : 5,"level":5} ---> this will only stringfy that data which is in array
+
+const shape = {
+  radius: 10,
+  diameter() {
+    return this.radius * 2;
+  },
+  perimeter: () => 2 * Math.PI * this.radius,
+};
+
+// console.log(shape.diameter()); ---> 20 this this refer to shape
+// console.log(shape.perimeter()); NaN ----> here are arrow function so this refer to window object.
+
+// destructuring in object and nested destructuring
+
+// let userName = {
+//   names: "rahulchouhan",
+//   fullName: {
+//     firstName: "Sohan",
+//     lastName: "chouhan",
+//   },
+// };
+
+// const {
+//   names,
+//   fullName: { firstName },
+// } = userName;
+// console.log(names, firstName);
+
+// console.log({a:1} ===  {a:1});
+// console.log({a:1} ==  {a:1});  --> both cases false because they are different object and they have different memory space
+
+// how to deep / clone an object
+
+let goodUser = {
+  name: "hul",
+  age: 26,
+};
+console.log(goodUser);
+const objClone = { ...goodUser };
+objClone.name = "rahul";
+console.log(hello);
+
+// 2nd method to clone
+const objClone = Object.assign({}, goodUser);
+
+// 3rd method to clone
+const objClone = JSON.parse(JSON.stringify(goodUser));
+
+// what is shallow copy : one object holds the reference to another object
+//  Deep copy : when we completely clone an object in to an another variable that is called deep copy
