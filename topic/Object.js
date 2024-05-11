@@ -89,6 +89,33 @@ let nums = {
   title: true,
 };
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function multiplyByObj(obj) {
   for (let elm in obj) {
     if (typeof obj[elm] === "number") {
