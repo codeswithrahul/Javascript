@@ -11,7 +11,6 @@ const obj = {
   
   console.log(obj); // Output: { name: 'Alice', age: 25 }
 
-
   const obj = {
     name: 'Alice',
     age: 25
