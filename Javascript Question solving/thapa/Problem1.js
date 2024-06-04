@@ -20,7 +20,7 @@
 //   let strSplit = str.split(" ");
 //   let longestWord = 0;
 //   for (let i = 0; i < strSplit.length; i++) {
-//     if (strSplit[i].length > 0) {
+//     if (strSplit[i].length > longestWord) {
 //       longestWord = strSplit[i].length;
 //     }
 //   }
@@ -29,12 +29,22 @@
 // console.log(findTheLongestWord("hello world javascript"));
 //  it will return length
 
-function findTheLongestWord(str) {
-  if (str.trim().length === 0) return "str has no data";
-  let strSplit = str.split(" ");
-  strSplit.sort((a, b) => b.length - a.length);
-  return strSplit[0];
-}
-console.log(findTheLongestWord("hello world javascript ertghjedrfghjertgh"));
+// function findTheLongestWord(str) {
+//   if (str.trim().length === 0) return "str has no data";
+//   let strSplit = str.split(" ");
+//   strSplit.sort((a, b) => b.length - a.length);
+//   return strSplit[0];
+// }
+// console.log(findTheLongestWord("hello world javascript ertghjedrfghjertgh"));
 
 // it will return word;
+
+// Using Reduce method :
+function findTheLongestWord(str) {
+  if (str.trim().length === 0) return "string has no data";
+  let strSplit = str.split(" ");
+  return strSplit.reduce((acc, currELm) => {
+    return currELm?.length > acc.length ? currELm : acc;
+  }, "");
+}
+console.log(findTheLongestWord("hegggglo hello"));
