@@ -8,9 +8,9 @@ function HashTag(str) {
   if (str.length > 280 || str.trim().length === 0) return false;
   str = str.split(" ");
   str = str.map((data) => {
-    return data.replace(data[0], data[0].toUpperCase());
+    // return data.replace(data[0], data[0].toUpperCase());
     // 2nd method
-    // return data.charAt(0).toUpperCase() + data.slice(1)
+    return data.charAt(0).toUpperCase() + data.slice(1)
   });
   str = `#${str.join("")}`;
   return str;

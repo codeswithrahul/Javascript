@@ -1,16 +1,28 @@
-// console.log("hdello", "h"); --- > output : h ----> 2
-
+// console.log("hdelloH", "h"); --- > output : h ----> 2
 function countOccurenceInChar(elm, findElm) {
-  let map = {};
   elm = elm.toLowerCase();
-  for (let element of elm) {
-    if (map[element]) {
-      map[element] = map[element] + 1;
-    } else {
-      map[element] = 1;
+  if (elm.includes(findElm)) {
+    let map = {};
+    for (let element of elm) {
+      if (map[element]) {
+        map[element] = map[element] + 1;
+      } else {
+        map[element] = 1;
+      }
     }
+    return map[findElm];
+  } else {
+    console.log("ye word nahi hai bhai");
   }
-  return map
 }
+console.log(countOccurenceInChar("helloH", "5"));
 
-console.log("fucntion call",   ("helloH", "h"));
+
+// Question :
+const data = "aaAABBccBBB";
+// output should be :
+// a - 2;
+// A - 2;
+// B - 2;
+// c - 2;
+// B - 3;

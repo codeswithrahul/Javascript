@@ -19,7 +19,6 @@ function fCounter(str) {
       map[elm] = 1;
     }
   }
-
   // Returning the final 'map' object containing the frequency of each character.
   return map;
 }
