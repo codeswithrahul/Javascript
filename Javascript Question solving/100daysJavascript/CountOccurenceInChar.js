@@ -10,12 +10,20 @@ function countOccurenceInChar(elm, findElm) {
         map[element] = 1;
       }
     }
-    return map[findElm];
+    return `${findElm} ---> ${map[findElm]}`;
   } else {
     console.log("ye word nahi hai bhai");
   }
 }
-console.log(countOccurenceInChar("helloH", "5"));
+console.log(countOccurenceInChar("helloH", "o"));
+
+
+
+
+
+
+
+
 
 
 // Question :
