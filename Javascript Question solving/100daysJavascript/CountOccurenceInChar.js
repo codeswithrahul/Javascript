@@ -17,15 +17,6 @@ function countOccurenceInChar(elm, findElm) {
 }
 console.log(countOccurenceInChar("helloH", "o"));
 
-
-
-
-
-
-
-
-
-
 // Question :
 const data = "aaAABBccBBB";
 // output should be :
@@ -34,3 +25,6 @@ const data = "aaAABBccBBB";
 // B - 2;
 // c - 2;
 // B - 3;
+
+const str = "RahulChouh";
+// count UpperCase and lowercase remove number and special character
