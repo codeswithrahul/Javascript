@@ -2,10 +2,18 @@
 // const data = [1,2,9] output -----> [1,2,1,0]
 // 1st edge case handled
 
+// function plusOne(arr) {
+//   const popp = arr.pop() + 1;
+//   arr.push(popp);
+//   return arr;
+// }
+
+// console.log(plusOne([1, 2, 5]));
+
 function plusOne(arr) {
-  const popp = arr.pop() + 1;
-  arr.push(popp);
-  return arr;
+  for (let i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+  }
 }
 
 console.log(plusOne([1, 2, 5]));
