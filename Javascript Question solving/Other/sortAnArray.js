@@ -24,29 +24,29 @@
 //       }
 //     }
 //   }
-//   return nums;rahulrahul
+//   return nums;
 
 // }
 
 // console.log(sortAna(nums));
 
-const nums = [10, 1, 4, 5, 2, 3, 9];
-function sortAna(nums) {
-  for (let i = 0; i < nums.length; i++) {
-    for (let j = 0; j < nums.length; j++) {
-      if (nums[i] < nums[j]) [nums[i], nums[j]] = [nums[j], nums[i]];
-    }
-  }
-  return nums;
-}
+// const nums = [10, 1, 4, 5, 2, 3, 9];
+// function sortAna(nums) {
+//   for (let i = 0; i < nums.length; i++) {
+//     for (let j = 0; j < nums.length; j++) {
+//       if (nums[i] < nums[j]) [nums[i], nums[j]] = [nums[j], nums[i]];
+//     }
+//   }
+//   return nums;
+// }
 
-console.log(sortAna(nums));
+// console.log(sortAna(nums));
 
 // Quick sort
 // const nums = [10, 1, 4, 5, 2, 3, 9];
 // function sortQuick(nums) {
 //   if (nums.length <= 1) return nums;
-  
+
 //   let pivot = nums[0];
 //   let right = [];
 //   let left = [];
