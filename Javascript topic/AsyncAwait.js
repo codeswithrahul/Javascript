@@ -120,6 +120,7 @@ async function handleAPIcall() {
     console.log(jsonValue);
   } catch (err) {
     console.log(err);
+
   }
 
   // fetch () => Response.json() => jsonValue   Note : json returns promise
@@ -127,4 +128,4 @@ async function handleAPIcall() {
   // readle stream to json so we will use .json() and json again return a promise.
 }
 
-handleAPIcall();
+handleAPIcall();operation

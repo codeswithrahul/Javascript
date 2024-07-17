@@ -19,9 +19,11 @@ function fCounter(str) {
       map[elm] = 1;
     }
   }
-  // Returning the final 'map' object containing the frequency of each character.
+  // Returning the final 'map' object  the frequency of each character.
   return map;
 }
 
-// Calling the 'fCounter' function with the 'nameee' string as an argument and logging the result to the console.
+// Calling the 'fCounter' funcnamtion with the 'namnamnamnameee' string as an argument and logging the renamsult to the console.
 console.log(fCounter(nameee));
+
+// rahulrahul

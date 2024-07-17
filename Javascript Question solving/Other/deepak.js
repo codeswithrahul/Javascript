@@ -54,7 +54,7 @@
 // 0 0 0 0
 
 // output: true
-// Explanation: In Equalityia, the citizens hold two arrays with mystical properties (3, 7, 2, 8, 6). The magical function inspects both arrays and joyously signals True, confirming that every element aligns perfectly. The harmony of Equalityia remains intact.
+// Explanation: (3, 7, 2, 8, 6). The magical function inspects both arrays and joyously signals True, confirming that every element aligns perfectly. The harmony of Equalityia remains intact.
 
 // [1,2,3] = [1,2,3] ---> true
 // [1,2,3] = [3,2,1] --> false
@@ -80,20 +80,47 @@
 // 0 max =2
 // min : 3
 
-function hello12(val1) {
-  let max = 0;
-  let min = 0;
+// function hello12(val1) {
+//   let max = 0;
+//   let min = 0;
 
-  for (let i = 0; i < val1.length; i++) {
-    if (val1[i] === 1) {
-      min++;
-    } else {
-      max = Math.max(max, min);
-      min = 0;
-    }
+//   for (let i = 0; i < val1.length; i++) {
+//     if (val1[i] === 1) {
+//       min++;
+//     } else {
+//       max = Math.max(max, min);
+//       min = 0;
+//     }
+//   }
+//   max = Math.max(max, min);
+//   return max;
+// }
+
+// console.log(hello12([1, 1, 2, 1, 2, 3]));
+const input = [
+  { name: "jone" },
+  { name: "jone" },
+  { name: "rahul" },
+  { name: "rohit" },
+];
+//  output :
+// [
+//   { name: 'jone', count: 2 },
+//   { name: 'rahul', count: 1 },
+//   { name: 'rohit', count: 1 }
+// ]
+
+const countMap = {};
+
+for (let i = 0; i < input.length; i++) {
+  const item = input[i];
+  if (countMap[item.name]) {
+    countMap[item.name].count += 1;
+  } else {
+    countMap[item.name] = { name: item.name, count: 1 };
   }
-  max = Math.max(max, min);
-  return max;
 }
 
-console.log(hello12([1, 1, 2, 1, 2, 3]));
+const output = Object.values(countMap);
+
+console.log(output);
