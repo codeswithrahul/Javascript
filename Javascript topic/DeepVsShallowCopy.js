@@ -61,8 +61,8 @@ copying.address.pinCode = "560078";
 
 // console.log(people,copying);
 
-//  deep copy --> we can achieve deep copy using structuredClone or using JSON.parse(JSON.stringify(morePeople)), it will not modify the initial object
-
+//  deep copy --> we can achieve deep copy using structuredClone or using JSON.parse(JSON.stringify(morePeople)), 
+// it will not modify the initial object..
 const morePeople = {
   firstName: "rahul",
   address: {

@@ -80,23 +80,23 @@
 // 0 max =2
 // min : 3
 
-// function hello12(val1) {
-//   let max = 0;
-//   let min = 0;
+function hello12(val1) {
+  let max = 0;
+  let min = 0;
 
-//   for (let i = 0; i < val1.length; i++) {
-//     if (val1[i] === 1) {
-//       min++;
-//     } else {
-//       max = Math.max(max, min);
-//       min = 0;
-//     }
-//   }
-//   max = Math.max(max, min);
-//   return max;
-// }
+  for (let i = 0; i < val1.length; i++) {
+    if (val1[i] === 1) {
+      min++;
+    } else {
+      max = Math.max(max, min);
+      min = 0;
+    }
+  }
+  max = Math.max(max, min);
+  return max;
+}
 
-// console.log(hello12([1, 1, 2, 1, 2, 3]));
+console.log(hello12([1, 1, 2, 1, 2, 3]));
 const input = [
   { name: "jone" },
   { name: "jone" },

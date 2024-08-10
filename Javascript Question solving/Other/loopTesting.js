@@ -23,6 +23,5 @@ function fCounter(str) {
   // Returning the final 'map' object containing the frequency of each character.
   return map;
 }
-
 // Calling the 'fCounter' function with the 'nameee' string as an argument and logging the result to the console.
 console.log(fCounter(nameee));

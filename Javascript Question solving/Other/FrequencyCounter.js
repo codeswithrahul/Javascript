@@ -1,5 +1,4 @@
 let nameee = "sourabhkumar vishalkumar rahulkumar";
-
 // Declaring a function named 'fCounter' that takes a parameter called 'str'.
 function fCounter(str) {
   // Declaring an empty object called 'map' to store the frequency of each character.
