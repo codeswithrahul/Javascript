@@ -226,3 +226,101 @@
 // }
 // printTable()
 
+// 1.
+// By using while loop and continue statement
+
+// Print all number from 1 to n but then it should not be divisible by 5
+
+
+// Example:-
+
+// Input:-
+
+// n=7
+
+// output:-
+
+// 1
+
+// 2
+
+// 3
+
+// 4
+
+// 6
+
+// 7
+// function skip(){
+//     for(let i =1 ; i<=21;i++){
+//        if(i%5 === 0) {
+//             break;
+//        }
+//        console.log(i);
+//     }
+// }
+// skip()
+
+
+
+
+
+// 2.
+// Print the following series using while loop
+
+// 1 4 9 16 25 36 …. n
+
+// Input :-
+
+// n = 49
+
+// Output :-
+
+// 1
+// 4
+// 9
+// 16
+// 25
+// 36
+// 49
+
+// 1
+// 8
+// 27
+
+// function printFollowing(){
+//   for(let i = 1; i<=7 ; i++){
+//       console.log(i**i);   
+//   }
+// }
+// printFollowing()
+
+// Write a program to print the digits of a number .
+
+// Input:-
+
+// N - 153 .
+
+// output:-
+
+// 3
+
+// 5
+
+// // 1
+// let num = 153;
+// let st = num.toString()
+
+// function check(){
+//     // console.log(num)
+// for(let i =0; i<=num.length-1;i++){
+//     console.log(i);
+// }
+// }
+
+// console.log(check())
+
+
+
+
+
