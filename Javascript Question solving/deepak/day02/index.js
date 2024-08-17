@@ -127,9 +127,6 @@
 // }
 
 // printOdd();
-
-
-
 // statement:
 
 // Calculate the sum of all numbers between 1 and N (inclusive) that are multiples of a given integer X.
@@ -143,7 +140,6 @@
 // Input Format:
 
 // Two integers, N and X, separated by a space. N represents the upper limit of the range, and X represents the integer whose multiples need to be summed.
-
 
 // Output Format:
 
@@ -178,14 +174,8 @@
 //         }
 //     }
 //     return sum;
-    
-
-
 // }
 // RangeMultiple(30,2)
-
-
-
 // 5.
 // Generate and print the multiplication tables(only 10) for the numbers 2, 3, and 4  using loops. Each table should be space-separated integers, and each table should start on a new line.
 
@@ -307,20 +297,84 @@
 
 // 5
 
-// // 1
-// let num = 153;
-// let st = num.toString()
+// 1
+let num = 153;
+let stringg= num.toString();
+// console.log(stringg.length)
 
-// function check(){
-//     // console.log(num)
-// for(let i =0; i<=num.length-1;i++){
-//     console.log(i);
+// function reverse(){
+//         for(let i =stringg.length-1;i>=0;i--){
+//   console.log(stringg.charAt(i))
+//     }
 // }
+
+
+// input;->456 
+// output:->654
+// console.log(reverse())
+
+// n = 5;
+// let i = 1;
+// while(i<=5){
+   
+//   console.log(i)
+//   i++;
 // }
 
-// console.log(check())
+// let n = 153;
+// function digitReve(){
+//     while(n >= 0){
+//         let digit = n % 10
+//         console.log(Math.abs(digit));
+//         n = n/10;
+//     }
+
+// }
 
 
+// console.log(digitReve())
 
+// // let n = 153;
+// function digitReve(n) {
+// //  15 > 0
+// // 1 > 0
+//     while (n > 0) {
+//         let digit = n % 10;
+//         // digit = 5
+//         // digit = 3
+//         // digit = 1
+//         // console.log(Math.abs(digit)); ----> 3,5,1
+//         // n = 153 
+//         // n = Math.floor(n / 10);   ------> n = 15, n = 1; n = 0;
+//     }
+// }
 
+// console.log(digitReve(n));
 
+let n = 456;
+let anser = 0;
+
+function revd(n){
+    while(n > 0){
+        let digit = n % 10;
+        // 6
+        // 5
+        // 4
+        // console.log(Math.abs(digit))
+        anser = anser * 10 + digit;
+        n =  Math.floor(n / 10);
+        // n = 45
+        // n = 4
+        // n = 0
+
+    }
+    console.log(anser);
+}
+
+console.log(revd(n))
+
+// 6
+// 5
+// 4
+
+// 654

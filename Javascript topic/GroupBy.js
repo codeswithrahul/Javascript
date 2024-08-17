@@ -20,4 +20,4 @@ const data = [
 // const filterKarlo = data.map(data => data.color === "red");
 
 console.log(data);
-console.log(filterKarlo);
+console.log( );
