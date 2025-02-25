@@ -1,3 +1,66 @@
+
+import axios from "axios";
+import { toast } from "react-toastify";
+
+const apiUrl = `https://api.cadabamsdiagnostics.com`;
+// const apiUrl = `http://localhost:9009`;
+// const apiUrl = `https://03b3-2406-7400-81-cbf6-49e3-c303-b916-1bf3.ngrok-free.app`;
+const accessToken = sessionStorage.getItem("access");
+const authToken = accessToken;
+
+const apiCall = async (method, endpoint, data, config = {}) => {
+  const url = `${apiUrl}/${endpoint}`;
+
+  const defaultConfig = {
+    headers: {
+      Authorization: `Bearer ${authToken}`,
+      "ngrok-skip-browser-warning": "69420",
+    },
+  };
+
+  // Check if data contains files
+  const isFormData = data instanceof FormData;
+
+  // Set the content type based on whether data is FormData or not
+  const contentType = isFormData ? "multipart/form-data" : "application/json";
+
+  const headers = {
+    "Content-Type": contentType,
+    ...defaultConfig.headers,
+    ...(config.headers || {}),
+  };
+
+  try {
+    const response = await axios({
+      method,
+      url,
+      data: data || {}, // Ensure data is not undefined
+      headers,
+    });
+
+    if (response.status >= 200 && response.status < 300) {
+      return response.data;
+    } else {
+      const errorDetails = {
+        status: response.status,
+        message: response.data.message || "Something went wrong",
+      };
+      throw new Error(JSON.stringify(errorDetails));
+    }
+  } catch (error) {
+    if (
+      error?.response?.data?.errorMessage === "Unauthorized access" ||
+      error?.response?.data?.errorMessage === "Internal Server Error"
+    ) {
+      toast.error(error?.response?.data?.errorMessage);
+    }
+
+    throw error;
+  }
+};
+
+export default apiCall;
+
 //  splice method modify the existing array
 // slice return a new array
 
